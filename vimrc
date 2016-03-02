@@ -29,7 +29,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -75,8 +75,11 @@ filetype indent on
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
-set nowrap       "Don't wrap lines
-set linebreak    "Wrap lines at convenient points
+"set nowrap       "Don't wrap lines"
+set wrap
+set linebreak    "Wrap lines at convenient points"
+set gfn=Monaco:h13
+set linespace=0
 
 " ================ Folds ============================
 
@@ -115,3 +118,7 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+cd /Projects
+
+let g:used_javascript_libs = 'underscore,backbone, AngularJS'
+set textwidth=80
