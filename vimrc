@@ -80,6 +80,8 @@ set wrap
 set linebreak    "Wrap lines at convenient points"
 set gfn=Monaco:h13
 set linespace=0
+set breakindent
+set showbreak=\ \ " comment so that the whitespace works >.>
 
 " ================ Folds ============================
 
@@ -121,4 +123,9 @@ so ~/.yadr/vim/settings.vim
 cd /Projects
 
 let g:used_javascript_libs = 'underscore,backbone, AngularJS'
-set textwidth=80
+
+if has('linebreak')
+  set breakindent
+  let &showbreak = '↳ '
+  set cpo+=n
+end
