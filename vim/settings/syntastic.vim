@@ -23,5 +23,5 @@ if !exists("g:syntastic_ruby_exec")
 endif
 
 if !exists("g:syntastic_loc_list_height")
-	let g:syntastic_loc_list_height = 10
+	let g:syntastic_loc_list_height = 3
 endif

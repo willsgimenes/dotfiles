@@ -1,6 +1,5 @@
 Bundle "AndrewRadev/splitjoin.vim"
 Bundle "Raimondi/delimitMate"
-Bundle "Shougo/neocomplete.git"
 Bundle "briandoll/change-inside-surroundings.vim.git"
 Bundle "godlygeek/tabular"
 Bundle "tomtom/tcomment_vim.git"
@@ -29,3 +28,5 @@ Bundle "vim-scripts/sudo.vim"
 Bundle "goldfeld/ctrlr.vim"
 Bundle "flazz/vim-colorschemes"
 Bundle "AlessandroYorba/Alduin"
+Bundle "Valloric/YouCompleteMe"
+Bundle 'ternjs/tern_for_vim'
