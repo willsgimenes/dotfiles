@@ -21,3 +21,7 @@ endfunction
 if !exists("g:syntastic_ruby_exec")
     let g:syntastic_ruby_exec = s:FindRubyExec()
 endif
+
+if !exists("g:syntastic_loc_list_height")
+	let g:syntastic_loc_list_height = 10
+endif

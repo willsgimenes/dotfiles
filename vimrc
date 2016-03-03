@@ -129,3 +129,5 @@ if has('linebreak')
   let &showbreak = '↳ '
   set cpo+=n
 end
+
+let g:indentLine_faster = 1
