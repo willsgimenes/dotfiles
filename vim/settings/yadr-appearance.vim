@@ -13,7 +13,7 @@ if has("gui_running")
   set columns=240
 
   if has("gui_gtk2")
-    set guifont=Inconsolata\ XL\ 12,Inconsolata\ 15,Monaco\ 12
+    set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12,Inconsolata\ 15,Monaco\ 12
   else
     set guifont=Fira\ Mono\ Medium\:h15,DejaVu\ Sans\ Mono\ Bold\:h13,Inconsolata:h11,Monaco:h11
   end
@@ -46,3 +46,7 @@ let g:gruvbox_color_column = 'orange'
 let g:indentLine_leadingSpaceChar = '·'
 
 let g:gruvbox_contrast_dark = 'medium'
+
+
+let g:airline_theme             = 'base16'
+let g:airline_powerline_fonts 	= 1
