@@ -13,12 +13,13 @@ if has("gui_running")
   set columns=240
 
   if has("gui_gtk2")
-    set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12,Inconsolata\ 15,Monaco\ 12
+    set guifont=Roboto\ Mono\ Medium\ for\ Powerline\ 12,Inconsolata\ 15,Monaco\ 12
   else
     set guifont=Fira\ Mono\ Medium\:h15,DejaVu\ Sans\ Mono\ Bold\:h13,Inconsolata:h11,Monaco:h11
   end
 else
   let g:CSApprox_loaded = 1
+  set guifont=Monospace\ 13,Inconsolata\ 15,Monaco\ 12
 
   " For people using a terminal that is not Solarized
   if exists("g:yadr_using_unsolarized_terminal")
@@ -28,25 +29,35 @@ else
 endif
 
 set background=dark    " Setting dark mode
-colorscheme gruvbox
+"colorscheme gruvbox
 
+set guioptions-=m  "menu bar
+set guioptions-=T  "toolbar
+set guioptions-=r  "scrollbar
+set guioptions-=L
 
 " Vim
-let g:indentLine_color_term = 239
+" let g:indentLine_color_term = 239
 
 "GVim
 "let g:indentLine_color_gui = '#A4E57E'
-let g:indentLine_char = '┊'
+" let g:indentLine_char = '┊'
 
 " none X terminal
-let g:indentLine_color_tty_light = 7 " (default: 4)
-let g:indentLine_color_dark = 1 " (default: 2)
+" let g:indentLine_color_tty_light = 7 " (default: 4)
+" let g:indentLine_color_dark = 1 " (default: 2)
 
-let g:gruvbox_color_column = 'orange'
-let g:indentLine_leadingSpaceChar = '·'
+" let g:gruvbox_color_column = 'orange'
+" let g:indentLine_leadingSpaceChar = '·'
 
-let g:gruvbox_contrast_dark = 'medium'
+" let g:gruvbox_contrast_dark = 'medium'
 
 
-let g:airline_theme             = 'base16'
-let g:airline_powerline_fonts 	= 1
+" let g:airline_theme             = 'base16'
+ let g:airline_powerline_fonts 	= 1
+
+" GVIM Only
+" colorscheme gotham
+colorscheme gotham256
+
+hi Normal ctermbg=none

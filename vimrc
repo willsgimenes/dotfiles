@@ -131,3 +131,13 @@ if has('linebreak')
 end
 
 let g:indentLine_faster = 1
+
+set shell=/usr/bin/zsh\ -l
+
+
+" Makin' Vim terminal awesome
+colorscheme gotham
+
+" This enable vim transparent background
+hi Normal ctermbg=none 
+
