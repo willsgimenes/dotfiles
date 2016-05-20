@@ -61,3 +61,6 @@ set guioptions-=L
 colorscheme gotham256
 
 hi Normal ctermbg=none
+
+
+set nolist "remove ugly identaion coloration
