@@ -75,13 +75,8 @@ filetype indent on
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
-"set nowrap       "Don't wrap lines"
-set wrap
-set linebreak    "Wrap lines at convenient points"
-set gfn=Monaco:h13
-set linespace=0
-set breakindent
-set showbreak=\ \ " comment so that the whitespace works >.>
+set nowrap       "Don't wrap lines
+set linebreak    "Wrap lines at convenient points
 
 " ================ Folds ============================
 
@@ -120,9 +115,17 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
-cd /Projects
+
+"set nowrap       "Don't wrap lines"
+set wrap
+set linebreak    "Wrap lines at convenient points"
+set linespace=0
+set breakindent
+set showbreak=\ \ " comment so that the whitespace works >.>
+
 
 let g:used_javascript_libs = 'underscore,backbone, AngularJS'
+set textwidth=80
 
 if has('linebreak')
   set breakindent
@@ -130,14 +133,7 @@ if has('linebreak')
   set cpo+=n
 end
 
-let g:indentLine_faster = 1
-
-set shell=/usr/bin/zsh\ -l
-
-
-" Makin' Vim terminal awesome
-colorscheme gotham
+let g:airline_powerline_fonts = 1
 
 " This enable vim transparent background
-hi Normal ctermbg=none 
-
+hi Normal ctermbg=none

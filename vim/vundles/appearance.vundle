@@ -6,10 +6,9 @@ Bundle "jby/tmux.vim.git"
 Bundle "morhetz/gruvbox"
 Bundle "xsunsmile/showmarks.git"
 Bundle "chriskempson/base16-vim"
-Bundle 'Yggdroot/indentLine'
 Bundle 'whatyouhide/vim-gotham'
 
 " Required for Gblame in terminal vim
 Bundle "godlygeek/csapprox.git"
-Bundle "heavenshell/vim-jsdoc" 
-
+Bundle 'Yggdroot/indentLine'
+Bundle "heavenshell/vim-jsdoc"
