@@ -69,7 +69,7 @@ Same as iTerm. The Lion style spaces navigation slows everything down for no rea
 
 * Make sure you install Solarized colorscheme in your terminal!
 * If you don't want to use solarized terminal, then make sure you do this:
-
+      source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
       let g:yadr_using_unsolarized_terminal = 1
       # in ~/.vimrc.before
 
